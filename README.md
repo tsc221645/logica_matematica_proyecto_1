@@ -4,6 +4,7 @@ En este proyecto se pretende desarrollar un reconocedor léxico-sintáctico para
 ### Integrantes del Grupo 4 
 + Ana Laura Tschen 221645
 + Mario Fernando Rocha 23501
++ Sebastian Garcia Bustamante 22291
 
 ### Tecnologías
 - Python 3.x
