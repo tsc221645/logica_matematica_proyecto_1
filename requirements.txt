@@ -1,0 +1,4 @@
+ply==3.11
+networkx==3.5
+matplotlib==3.10.5
+pydot==4.0.1

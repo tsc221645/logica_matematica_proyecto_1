@@ -1,0 +1,38 @@
+# Archivos generados por PLY (Python Lex-Yacc)
+parser.out
+parsetab.py
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Archivos de salida del programa
+formula_graph.png
+*.png
+
+# Archivos del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

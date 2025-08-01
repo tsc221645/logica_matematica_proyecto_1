@@ -63,22 +63,29 @@ precedence = (
 )
 
 start = "formula"
+
 def p_formula_var(p):
+    """formula : VAR"""
     p[0] = Node(p[1])
 
 def p_formula_const(p):
+    """formula : CONST"""
     p[0] = Node(p[1])
 
 def p_formula_paren(p):
+    """formula : LPAREN formula RPAREN"""
     p[0] = p[2]
 
 def p_formula_not(p):
+    """formula : NOT formula"""
     p[0] = Node("NOT", p[2])
 
 def p_formula_and(p):
+    """formula : formula AND formula"""
     p[0] = Node("AND", p[1], p[3])
 
 def p_formula_or(p):
+    """formula : formula OR formula"""
     p[0] = Node("OR", p[1], p[3])
 
 def p_formula_implies(p):
@@ -86,6 +93,7 @@ def p_formula_implies(p):
     p[0] = Node("IMPLIES", p[1], p[3])
 
 def p_formula_iff(p):
+    """formula : formula IFF formula"""
     p[0] = Node("IFF", p[1], p[3])
 
 def p_error(p):
